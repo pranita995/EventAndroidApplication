@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#e9f1ba"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Event"
+        android:padding="5dp"
+        android:background="#d5dda6"
+        android:textSize="15dp"
+        />
+    <EditText
+        android:id="@+id/ed_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Event Name"
+        android:textSize="15dp"
+        android:layout_below="@id/dialog_title"
+        />
+
+    <EditText
+        android:id="@+id/ed_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
+        android:textSize="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:textIsSelectable="false"
+        android:layout_below="@id/ed_agenda"
+        />
+
+    <EditText
+        android:id="@+id/ed_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Time"
+        android:textSize="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:textIsSelectable="false"
+        android:layout_below="@id/ed_date"
+        />
+    <Button
+        android:id="@+id/dialog_positive_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_alignParentRight="true"
+        android:background="#dde5ad"
+        android:layout_below="@id/ed_time"
+        />
+    <Button
+        android:id="@+id/dialog_negative_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancle"
+        android:layout_toLeftOf="@id/dialog_positive_btn"
+        android:background="#dde5ad"
+        android:layout_marginRight="53dp"
+        android:layout_alignBaseline="@id/dialog_positive_btn"
+        />
+
+</RelativeLayout>
